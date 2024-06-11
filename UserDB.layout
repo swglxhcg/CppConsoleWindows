@@ -1,0 +1,52 @@
+[
+    {
+        "caretX": 23,
+        "caretY": 162,
+        "filename": "F:/C/Documents/UserDB/UserDB/conWindows.h",
+        "focused": false,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 1,
+        "topLine": 199
+    },
+    {
+        "caretX": 4,
+        "caretY": 9,
+        "filename": "F:/C/Documents/UserDB/UserDB/allValueType.h",
+        "focused": false,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 4,
+        "topLine": 1
+    },
+    {
+        "caretX": 16,
+        "caretY": 13,
+        "filename": "F:/C/Documents/UserDB/UserDB/main.cpp",
+        "focused": true,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 0,
+        "topLine": 1
+    },
+    {
+        "caretX": 19,
+        "caretY": 5,
+        "filename": "F:/C/Documents/UserDB/UserDB/allWindows.h",
+        "focused": false,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 2,
+        "topLine": 1
+    },
+    {
+        "caretX": 1,
+        "caretY": 4,
+        "filename": "F:/C/Documents/UserDB/UserDB/allValues.h",
+        "focused": false,
+        "isOpen": true,
+        "leftChar": 1,
+        "order": 3,
+        "topLine": 1
+    }
+]
