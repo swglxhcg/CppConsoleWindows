@@ -5,9 +5,9 @@ CPP      = g++.exe
 CC       = gcc.exe
 WINDRES  = windres.exe
 RES      = UserDB_private.res
-OBJ      = main.o $(RES)
-LINKOBJ  = main.o UserDB_private.res
-CLEANOBJ  =  main.o  UserDB_private.res UserDB.exe
+OBJ      = main.o allFunction.o $(RES)
+LINKOBJ  = main.o allFunction.o UserDB_private.res
+CLEANOBJ  =  main.o allFunction.o  UserDB_private.res UserDB.exe
 LIBS     = 
 INCS     =  
 CXXINCS  =  
@@ -27,8 +27,11 @@ clean: clean-custom
 $(BIN): $(OBJ)
 	$(CPP) $(LINKOBJ) -o $(BIN) $(LIBS)
 
-main.o: main.cpp
+main.o: main.cpp conWindows.h allValues.h allWindows.h allValueType.h globalHeader.h
 	$(CPP) -c main.cpp -o main.o $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
+
+allFunction.o: allFunction.cpp allValueType.h globalHeader.h
+	$(CPP) -c allFunction.cpp -o allFunction.o $(CXXFLAGS)  -finput-charset=UTF-8 -fexec-charset=gbk
 
 UserDB_private.res: UserDB_private.rc 
 	$(WINDRES) -i UserDB_private.rc --input-format=rc -o UserDB_private.res -O coff $(WINDRESFLAGS) 

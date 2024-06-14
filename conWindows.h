@@ -1,7 +1,7 @@
-#include<bits/stdc++.h>
-#include<windows.h>
-#include<conio.h>
-using namespace std;
+#ifndef CONWINDOWS_H
+#define CONWINDOWS_H
+
+#include"globalHeader.h"
 
 void gotoXY(short x, short y) {
 	COORD coord = {x, y}; 
@@ -203,3 +203,4 @@ public:
 	}
 };
 
+#endif

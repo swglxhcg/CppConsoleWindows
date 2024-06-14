@@ -5,6 +5,12 @@
 #define WHEIGHT 25
 
 #include"conWindows.h"
+#include"allValueType.h"
+#include"allValues.h"
+
+extern Users curUser;
+extern bool userLogin(string username,string password);
+
 
 void drawMainWindow(){
 	string windowsLine[6]={"╔","╗","╚","╝","═","║"};
@@ -30,11 +36,12 @@ void loginWindow(){
 	ButtonCK loginBtn(44,tempHang+12,7,1);
 	loginBtn.setText("  登录");
 	loginBtn.draw();
-	unEck.getEditFocus();
-	pwdEck.getEditFocus();
+	curUser.username=unEck.getEditFocus();
+	curUser.password=pwdEck.getEditFocus();
 	loginBtn.setFocusInfo(true);
 	getch();
 	loginBtn.setFocusInfo(false);
+	
 	
 }
 
